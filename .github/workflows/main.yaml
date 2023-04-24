@@ -24,6 +24,7 @@ jobs:
       - run: flutter clean
       - run: rm -rf *.lock
       - run: flutter pub get
+      - run: flutter build apk
       - name: Create a Release APK
         uses: ncipollo/release-action@v1
         with:
