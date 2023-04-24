@@ -20,7 +20,7 @@ jobs:
           flutter-version: "3.7.10"
           channel: 'stable'
           cache: true
-      - run: flutter clearn
+      - run: flutter clean
       - run: rm -rf *.lock
       - run: flutter pub get
       - name: Create a Release APK
